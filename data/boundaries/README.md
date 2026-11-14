@@ -1,0 +1,3 @@
+# Boundary provenance
+
+`maui-coastline.geojson` is a WGS84 GeoJSON query of the Hawai‘i Statewide GIS Program Coastline layer, derived from USGS Digital Line Graphs (1983). Query selected exactly `isle='Maui' AND water=0`, output CRS EPSG:4326, retaining `isle`, `water`, `sqmi`. Source layer: https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/3 . Metadata: https://files.hawaii.gov/dbedt/op/gis/data/coastline.pdf . State public-domain/no-warranty statement: https://planning.hawaii.gov/gis/download-gis-data-expanded/ . Retrieved 2026-11-14. SHA-256: `5f918822bb2e523924c9bc917afe81af3491efa43c80388b7bbf3ce4d1b35d7c`. This is a coastline reference, not a legal boundary or current surveyed shoreline.

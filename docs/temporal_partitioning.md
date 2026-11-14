@@ -1,0 +1,3 @@
+# Temporal partitioning
+
+Acquisition dates and HHMM times are interpreted as UTC, including values missing leading zeroes. Invalid dates and times are rejected. Pacific/Honolulu timestamps and local dates are stored separately. Fixed partition boundaries use UTC acquisition year: 2013–2020 training, 2021–2022 validation, 2023 held-out test. Training exports are filtered independently and cannot include UTC-2023 records. UTC 2023-01-01 may be 2022 local time; this is intentional and must be accounted for in local seasonal analysis. Acquisition time is not ignition time. Do not tune using the 2023 test set.

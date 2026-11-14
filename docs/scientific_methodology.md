@@ -1,0 +1,5 @@
+# Scientific methodology
+
+A research prototype ingests user-supplied FIRMS-format data and uses a fixed centroid-based 1 km UTM grid and UTC-day support, plus candidate MODIS–S-NPP links within 1 km and 60 minutes. See `docs/harmonization_methodology.md` for assumptions, limitations, native quality policy, FRP and the comparison sensitivity. Detections are not confirmed incidents; acquisition time is not ignition time. No detection is not proof of no fire. No complete coverage, cloud or overpass opportunity data is available, and no independent perimeter or incident validation has been completed.
+
+Train on 2013–2020 UTC, explore sensitivity on training/validation 2021–2022 only, and preserve the 2023 test partition. A config lock binds the dataset and partition hashes. Descriptive 2023 totals were visible during ingestion audit before the config was frozen; the subsequent held-out assessment is therefore not fully blinded. No claim is made that FireReady predicts wildfire probability, saves lives, or could have prevented the Maui tragedy. Resource optimization remains future work.

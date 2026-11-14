@@ -1,0 +1,3 @@
+# Confidence handling
+
+All valid native values are retained in the reference. Sensitivity's conservative profile uses MODIS confidence ≥30 and VIIRS native nominal/high categories; missing confidence is excluded from that profile, not deleted from source data. NASA's [MODIS guide](https://www.earthdata.nasa.gov/s3fs-public/2023-09/MODIS_C6_C6.1_Fire_User_Guide_1.0.pdf) describes 30–80 as nominal and ≥80 high; the [VIIRS description](https://firms.modaps.eosdis.nasa.gov/content/descriptions/FIRMS_VIIRS_Firehotspots.html) defines its separate categories. This is a comparison policy, not a common calibrated confidence or fire probability.

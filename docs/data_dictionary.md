@@ -1,0 +1,3 @@
+# Data dictionary
+
+See `docs/firms_schema_mapping.md` for original fields and `pipeline/core.py` for the version 0.2 normalized schema. Observation IDs are SHA-256 over the sensor and canonical source row. Coordinates are WGS84 degrees; acquisition timestamps are UTC and Pacific/Honolulu ISO-8601. `frp_mw` is megawatts; `scan_km` and `track_km` are kilometers; brightness measurements are Kelvin and sensor-band-specific. Missing optional measurements remain null. `quality_flags` lists missing optional values. `processing_type` is `standard`, `NRT`, `RT`, `URT`, or `unknown`; confidence remains native and sensor-specific. `partition` uses UTC acquisition year. `raw_record_json`, `source_file_id` and `source_row_number` provide lineage.

@@ -1,0 +1,1 @@
+"""FireReady ingestion package."""

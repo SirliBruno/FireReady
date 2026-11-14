@@ -1,0 +1,6 @@
+# Provenance
+
+Each CSV or ZIP member records the containing file SHA-256 and member SHA-256, file size, member name and stable source-file ID. Each accepted or rejected row stores the source ID and CSV row number; accepted rows include the original attributes serialized as JSON. Duplicates record their source and the source ID of the first matching row. A hash proves byte identity, not origin or scientific accuracy. The input files remain unchanged. Dataset processing timestamps vary between runs; stable observation identifiers derive from sensor and canonical raw attributes, not processing time. Source URLs are unknown until supplied during explicit review/publishing.
+
+## Supplied files and research analysis
+The three user-supplied ZIP hashes and original/accepted record ranges are listed in `docs/data_inventory.md`; originals remain at the user's supplied locations and copies are under `data/raw/`. Source authenticity has not been independently authenticated. The frozen configuration binds the dataset ID and partition-file hashes. The local research preview is explicitly `real-unverified`; it is distinct from reviewed publication and cannot be presented as independently verified data. NOAA-20 processing type and the VIIRS archive `bright_t31` mapping remain unresolved.

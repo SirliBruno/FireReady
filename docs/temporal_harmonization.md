@@ -1,0 +1,3 @@
+# Temporal harmonization
+
+Sensor timestamps are UTC acquisition/overpass times, not ignition times. Candidate links require absolute UTC time difference within a configurable window and the same training/validation/test partition. This partition boundary deliberately prevents links crossing New Year between different splits even if they are close in time. A reference window of 60 minutes is an exploratory choice; tested windows are 30, 60, 180, 360 and 1,440 minutes. Daily analytical bins are UTC midnight-to-midnight; local Hawai‘i dates and months are retained separately for future seasonal work. No observation opportunity or cloud mask is available, so unmatched is not a false negative.

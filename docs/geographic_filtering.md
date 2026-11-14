@@ -1,0 +1,7 @@
+# Geographic filtering
+
+Input coordinates are assumed WGS84 longitude/latitude (EPSG:4326). An inclusive bounding box [-156.75, 20.55, -155.95, 21.10] is the preliminary filter. The default configuration then applies Shapely `covers` using the Hawai‘i Statewide GIS Program Coastline layer, selecting `isle='Maui'` and `water=0`. `covers` includes points exactly on the stored polygon edge. The downloaded file has one Maui land Polygon, verified as valid, with bounds [-156.6973, 20.5743, -155.9789, 21.0315] and SHA-256 `5f918822bb2e523924c9bc917afe81af3491efa43c80388b7bbf3ce4d1b35d7c`. The exact file hash is checked before use. `outSR=4326` was used in the GIS service query; GeoJSON is WGS84.
+
+Sources: https://geodata.hawaii.gov/arcgis/rest/services/Terrestrial/MapServer/3 and https://files.hawaii.gov/dbedt/op/gis/data/coastline.pdf . The state describes its download page as public domain, without warranty: https://planning.hawaii.gov/gis/download-gis-data-expanded/ . The layer is derived from 1983 USGS Digital Line Graphs and is not a legal survey boundary; coastline changes and positional uncertainty remain. Downloaded 2026-11-14. No neighboring-island or ocean polygons were selected.
+
+When the configuration has no boundary_path, the pipeline explicitly reports `provisional_bbox_only`; the rectangle can contain water and other land. A configured but missing, invalid or altered boundary fails instead of silently reverting. The output manifest records the filter mode and boundary hash, and excluded rows retain reasons.

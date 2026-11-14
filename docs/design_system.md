@@ -1,0 +1,2 @@
+# Design system
+Dark charcoal surfaces and thin borders provide a quiet analytical canvas. Orange denotes thermal context; cyan denotes resource or source links; red is reserved for critical conditions. Space Grotesk headings and DM Sans body text provide hierarchy with system fallbacks. Components include panels, status tags, informative empty states and form controls. Responsive layout collapses navigation and grids for smaller screens; visible focus and reduced-motion settings are supported. No outcome statistics are hardcoded.

@@ -1,0 +1,9 @@
+pandas==3.0.1
+numpy==2.5.4
+pyarrow==23.0.1
+pytest==9.0.2
+tzdata==2025.3
+python-dateutil==4.0.0
+jsonschema==4.25.1
+shapely==2.1.2
+pyproj==3.7.2
