@@ -14,5 +14,5 @@ data/raw/
 public/data/dataset.json
 public/data/manifest.json
 public/data/observations.geojson
-public/data/research/
-public/data/research-status.json
+
+
