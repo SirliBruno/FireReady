@@ -22,3 +22,4 @@ body,button,input,select,h1,h2,h3,.landing-copy h2,.landing-intro h3,.story-intr
 
 /* Increase reading sizes while keeping dense analytical controls compact. */
 nav a{font-size:14px}.panel-head{font-size:12px}.body-copy{font-size:14px}.caption,.empty p,.status-row p,.dataset-control p,.meta-row,.context-note{font-size:12px}.empty strong,.dataset-control b{font-size:13px}.period{direction:ltr}.period div{direction:rtl}.sensors h2{direction:ltr;text-align:right}.page-heading p{font-size:14px}.research-selection,.research-warning{font-size:13px}
+.dataset-control details{margin-top:12px;color:#b7c7d0;font-size:12px}.dataset-control summary{cursor:pointer}.dataset-control a{display:inline-block;margin-top:8px;font-size:12px}
