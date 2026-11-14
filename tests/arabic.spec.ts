@@ -5,5 +5,5 @@ test('Arabic-first navigation preserves scientific caveats', async ({ page }) =>
   await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
   await expect(page.getByRole('link', { name: 'نظرة عامة', exact: true })).toBeVisible();
   await page.goto('/#simulator');
-  await expect(page.getByRole('button', { name: /تشغيل المحاكاة/ })).toBeDisabled();
+  await expect(page.getByRole('button', { name: /تشغيل المحاكاة/ })).toBeEnabled();
 });

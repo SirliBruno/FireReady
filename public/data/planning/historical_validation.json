@@ -1,0 +1,150 @@
+{
+  "configuration": {
+    "model_id": "a81ff99749de57845caea32ba88cbfd649e4b04d1ffdf1186d34db7921037135",
+    "tie_break": "stable grid identifier ascending",
+    "area_fractions": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "methods": [
+      "annual",
+      "monthly"
+    ],
+    "holdout_disclosure": "2023 descriptive data exposed in prior development; exploratory not blinded"
+  },
+  "results": [
+    {
+      "partition": "validation",
+      "method": "annual",
+      "requested_area_fraction": 0.1,
+      "actual_mean_area_fraction": 0.09999999315727914,
+      "positive_cell_days": 52,
+      "captured_positive_cell_days": 19,
+      "capture_fraction": 0.36538461538461536,
+      "uniform_expected_capture_fraction": 0.1,
+      "notes": "Zero-score cells included only to fill equal evaluation area; not classified safe. Tie-break ordering matters."
+    },
+    {
+      "partition": "validation",
+      "method": "monthly",
+      "requested_area_fraction": 0.1,
+      "actual_mean_area_fraction": 0.0999997128238569,
+      "positive_cell_days": 52,
+      "captured_positive_cell_days": 37,
+      "capture_fraction": 0.7115384615384616,
+      "uniform_expected_capture_fraction": 0.1,
+      "notes": "Zero-score cells included only to fill equal evaluation area; not classified safe. Tie-break ordering matters."
+    },
+    {
+      "partition": "validation",
+      "method": "annual",
+      "requested_area_fraction": 0.2,
+      "actual_mean_area_fraction": 0.19999966324914098,
+      "positive_cell_days": 52,
+      "captured_positive_cell_days": 46,
+      "capture_fraction": 0.8846153846153846,
+      "uniform_expected_capture_fraction": 0.2,
+      "notes": "Zero-score cells included only to fill equal evaluation area; not classified safe. Tie-break ordering matters."
+    },
+    {
+      "partition": "validation",
+      "method": "monthly",
+      "requested_area_fraction": 0.2,
+      "actual_mean_area_fraction": 0.1999997100382274,
+      "positive_cell_days": 52,
+      "captured_positive_cell_days": 37,
+      "capture_fraction": 0.7115384615384616,
+      "uniform_expected_capture_fraction": 0.2,
+      "notes": "Zero-score cells included only to fill equal evaluation area; not classified safe. Tie-break ordering matters."
+    },
+    {
+      "partition": "validation",
+      "method": "annual",
+      "requested_area_fraction": 0.3,
+      "actual_mean_area_fraction": 0.29999987864772687,
+      "positive_cell_days": 52,
+      "captured_positive_cell_days": 46,
+      "capture_fraction": 0.8846153846153846,
+      "uniform_expected_capture_fraction": 0.3,
+      "notes": "Zero-score cells included only to fill equal evaluation area; not classified safe. Tie-break ordering matters."
+    },
+    {
+      "partition": "validation",
+      "method": "monthly",
+      "requested_area_fraction": 0.3,
+      "actual_mean_area_fraction": 0.29999980675782584,
+      "positive_cell_days": 52,
+      "captured_positive_cell_days": 43,
+      "capture_fraction": 0.8269230769230769,
+      "uniform_expected_capture_fraction": 0.3,
+      "notes": "Zero-score cells included only to fill equal evaluation area; not classified safe. Tie-break ordering matters."
+    },
+    {
+      "partition": "test",
+      "method": "annual",
+      "requested_area_fraction": 0.1,
+      "actual_mean_area_fraction": 0.09999999315727914,
+      "positive_cell_days": 131,
+      "captured_positive_cell_days": 51,
+      "capture_fraction": 0.3893129770992366,
+      "uniform_expected_capture_fraction": 0.1,
+      "notes": "Zero-score cells included only to fill equal evaluation area; not classified safe. Tie-break ordering matters."
+    },
+    {
+      "partition": "test",
+      "method": "monthly",
+      "requested_area_fraction": 0.1,
+      "actual_mean_area_fraction": 0.0999997128238569,
+      "positive_cell_days": 131,
+      "captured_positive_cell_days": 47,
+      "capture_fraction": 0.35877862595419846,
+      "uniform_expected_capture_fraction": 0.1,
+      "notes": "Zero-score cells included only to fill equal evaluation area; not classified safe. Tie-break ordering matters."
+    },
+    {
+      "partition": "test",
+      "method": "annual",
+      "requested_area_fraction": 0.2,
+      "actual_mean_area_fraction": 0.19999966324914098,
+      "positive_cell_days": 131,
+      "captured_positive_cell_days": 75,
+      "capture_fraction": 0.5725190839694656,
+      "uniform_expected_capture_fraction": 0.2,
+      "notes": "Zero-score cells included only to fill equal evaluation area; not classified safe. Tie-break ordering matters."
+    },
+    {
+      "partition": "test",
+      "method": "monthly",
+      "requested_area_fraction": 0.2,
+      "actual_mean_area_fraction": 0.1999997100382274,
+      "positive_cell_days": 131,
+      "captured_positive_cell_days": 47,
+      "capture_fraction": 0.35877862595419846,
+      "uniform_expected_capture_fraction": 0.2,
+      "notes": "Zero-score cells included only to fill equal evaluation area; not classified safe. Tie-break ordering matters."
+    },
+    {
+      "partition": "test",
+      "method": "annual",
+      "requested_area_fraction": 0.3,
+      "actual_mean_area_fraction": 0.29999987864772687,
+      "positive_cell_days": 131,
+      "captured_positive_cell_days": 75,
+      "capture_fraction": 0.5725190839694656,
+      "uniform_expected_capture_fraction": 0.3,
+      "notes": "Zero-score cells included only to fill equal evaluation area; not classified safe. Tie-break ordering matters."
+    },
+    {
+      "partition": "test",
+      "method": "monthly",
+      "requested_area_fraction": 0.3,
+      "actual_mean_area_fraction": 0.29999980675782584,
+      "positive_cell_days": 131,
+      "captured_positive_cell_days": 57,
+      "capture_fraction": 0.4351145038167939,
+      "uniform_expected_capture_fraction": 0.3,
+      "notes": "Zero-score cells included only to fill equal evaluation area; not classified safe. Tie-break ordering matters."
+    }
+  ]
+}

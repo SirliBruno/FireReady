@@ -1,0 +1,4 @@
+import {it,expect} from 'vitest';
+import {readFileSync} from 'node:fs';
+import {optimizeCoverage,evaluateCoverage} from '../src/services/optimizer';
+it('reproduces August hypothetical comparison from the actual artifact',()=>{const d=JSON.parse(readFileSync('public/data/planning/maui.json','utf8'));const w=d.monthly_weights['8'];const order=d.stations.map((s:{longitude:number},i:number)=>({i,x:s.longitude})).sort((a:{x:number},b:{x:number})=>a.x-b.x);const ref=[0,1,2].map(i=>order[Math.floor((i+.5)*order.length/3)].i);const baseline=evaluateCoverage(d.costs_km,w,ref,10);const optimal=optimizeCoverage(d.costs_km,w,3,10);expect(baseline.coveredWeight/baseline.totalWeight*100).toBeCloseTo(44.4,1);expect(optimal.coveredWeight/optimal.totalWeight*100).toBeCloseTo(87.0,1);expect(baseline.weightedDistance).toBeCloseTo(11.38,2);expect(optimal.weightedDistance).toBeCloseTo(6.97,2)});

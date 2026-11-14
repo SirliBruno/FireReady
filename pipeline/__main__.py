@@ -8,7 +8,11 @@ def main():
     cmd=sub.add_parser('ingest');cmd.add_argument('--config',default='config/maui.json');cmd.add_argument('--mode',required=True,choices=['real','synthetic']);cmd.add_argument('--input');cmd.add_argument('--output')
     pub=sub.add_parser('publish');pub.add_argument('--reviewer',required=True);pub.add_argument('--evidence',required=True);pub.add_argument('--source-url',required=True)
     sub.add_parser('freeze-harmonization');sub.add_parser('harmonize');sub.add_parser('publish-research-preview')
+    seasonal=sub.add_parser('analyze-seasonal');seasonal.add_argument('--region',choices=['maui','all'],default='all');seasonal.add_argument('--mode',choices=['real'],default='real')
     args=parser.parse_args();root=Path.cwd().resolve()
+    if args.command=='analyze-seasonal':
+        from pipeline.seasonal import run
+        print(json.dumps(run(root,args.region),ensure_ascii=False,indent=2));return 0
     if args.command=='publish-research-preview':
         from pipeline.harmonization import publish_research_preview
         result=publish_research_preview(root/'data/processed/real',root/'data/processed/harmonization/real',root/'public/data',root/'data/raw')

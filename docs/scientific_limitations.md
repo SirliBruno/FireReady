@@ -1,3 +1,7 @@
 # Scientific limitations
 
 Sensor footprints, sensitivity, detection thresholds, satellite overpasses, clouds and observation opportunities differ. The observed-positive Jaccard is not accuracy, and absence of a detection is not no fire. The NOAA-20 archive's processing type remains unresolved and is excluded from the reference cohort. NOAA-20 all-cohort sensitivity does not imply equivalence. VIIRS archive `bright_t31` remains raw/unmapped. The source is user supplied and its authenticity is not independently authenticated. The 1983 Maui coastline is not a legal or current survey. A detection is not a confirmed unique fire, ignition, burned area, or fire perimeter. No prediction, optimized resource allocation, or avoided disaster claim is made. 2023 descriptive counts were known before the configuration freeze; results cannot be described as fully blinded.
+
+## Sprint 04 local-calendar view
+
+Maui local cell-day counts are descriptive, depend on satellite observation opportunities that are unknown, and are not wildfire probabilities or confirmed incidents. The observed-only grid is not an exhaustive eligible land grid. No preparedness index, independent incident validation, baseline evaluation or operational resource demand is available. See [Sprint 04 report](sprint_04_report.md).

@@ -1,0 +1,36 @@
+{
+  "raw_archive_hashes": [
+    {
+      "file": "modis/DL_FIRE_M-C61_847409.zip",
+      "sha256": "a0945bc906f786f725bcc9e8afe79ddddc0fe25b902db4c96af218282244087a",
+      "matches_supplied_inventory": true
+    },
+    {
+      "file": "viirs/DL_FIRE_J1V-C2_847420.zip",
+      "sha256": "a6dc515d90231d8fecb204e9040eab7163c7e9ee1d3ad9231287599c1f7966e0",
+      "matches_supplied_inventory": true
+    },
+    {
+      "file": "viirs/DL_FIRE_SV-C2_847363.zip",
+      "sha256": "6959a18687b147b1a00e5becf02eec124cf008f385a22688db4a39466a778cb0",
+      "matches_supplied_inventory": true
+    }
+  ],
+  "accepted": 1852,
+  "reference": 1146,
+  "source_authentication": "not independently performed",
+  "utc_range": [
+    "2013-01-09T12:11:00+00:00",
+    "2023-12-24T11:55:00+00:00"
+  ],
+  "cohort": "MODIS + Suomi NPP; NOAA-20 excluded because processing type unresolved",
+  "coverage": "unknown",
+  "holdout": "not fully blinded; 2023 descriptive totals exposed previously",
+  "artifact_sha256": {
+    "public\\data\\planning\\maui.json": "5f459b17d54903aff617517f76cd589395c332ce9f59171c9449461f6a806e35",
+    "public\\data\\research\\harmonization.json": "c86c3cad77c5c0ee5387e2fd36f3ca12327806472ee12a56ed0b011e3b85a798",
+    "public\\data\\seasonal\\maui.json": "e108061a28de54a265f03c138b775f22ce12b35c5a9f5e937614cccc40f8cab0",
+    "data\\auxiliary\\fire_stations_statewide.geojson": "80f5bcd5c54d08d7d21f5ff9ca30b6e3bb0c858f8968028c06fa170411e7105b",
+    "data\\boundaries\\maui-coastline.geojson": "5f918822bb2e523924c9bc917afe81af3491efa43c80388b7bbf3ce4d1b35d7c"
+  }
+}

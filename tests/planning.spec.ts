@@ -1,0 +1,2 @@
+import {test,expect} from '@playwright/test';
+test('hypothetical simulator returns calculated equal-budget results',async({page})=>{await page.goto('/#simulator');await page.getByRole('button',{name:'تشغيل المحاكاة',exact:true}).click();await expect(page.getByText('نتائج محسوبة · نفس الميزانية لكلا التوزيعين')).toBeVisible();await expect(page.getByText('3 مركبة افتراضية')).toHaveCount(2);await page.screenshot({path:'docs/screenshots/sprint05-simulator.png',fullPage:true})});
